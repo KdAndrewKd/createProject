@@ -1,3 +1,4 @@
+#!/usr/bin/python3.11
 import os
 from datetime import datetime
 
@@ -31,5 +32,9 @@ while True:
                 createFile.write(contentFile)
 
         print(f"Project {nameFolder} was created.")
-        
+
+        # /usr/share/code/code --unity-launch %F
+        os.system(f'/usr/share/code/code {nameFolder}')
+
+
         exit()
