@@ -18,7 +18,7 @@ while True:
             with open(f'{nameFolder}/{nameFile}', "w", encoding="utf-8")as createFile:
 
                 if nameFile == ".gitignore":
-                    contentFile="/venv/ \n.idea"
+                    contentFile="/venv/ \n.idea \n.vscode"
 
                 elif nameFile == "main.py":
                     contentFile="# source venv/bin/activate"
