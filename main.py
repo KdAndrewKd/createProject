@@ -40,10 +40,10 @@ nameFolder = translator(nameFolder)
 
 
 if os.path.exists(nameFolder):
-    print("Folder exist. Enter ather name.") 
+    print("Folder exist. Enter other name.") 
 else:
     os.mkdir(nameFolder) 
-    os.system(f'python -m venv {nameFolder}/venv')
+    os.system(f'python3.11 -m venv {nameFolder}/venv')
     
     listFiles = ("README.txt", ".gitignore", "help.txt", "info.txt", "main.py")
 
@@ -54,8 +54,8 @@ else:
             if nameFile == ".gitignore":
                 contentFile="/venv/ \n.idea \n.vscode"
 
-            # elif nameFile == "main.py":
-            #     contentFile="# source venv/bin/activate"
+            elif nameFile == "main.py":
+                contentFile="# source venv/bin/activate"
 
             elif nameFile == "info.txt":
                 curentTime = datetime.now()
