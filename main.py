@@ -45,7 +45,7 @@ else:
     os.mkdir(nameFolder) 
     os.system(f'python3.11 -m venv {nameFolder}/venv')
     
-    listFiles = ("README.txt", ".gitignore", "help.txt", "info.txt", "main.py")
+    listFiles = ("README.txt", ".gitignore", "help.txt", "info.txt", "main.py", "requirements.txt")
 
     for nameFile in listFiles:
         contentFile = ""
@@ -54,7 +54,7 @@ else:
             if nameFile == ".gitignore":
                 contentFile="/venv/ \n.idea \n.vscode"
 
-            elif nameFile == "main.py":
+            elif nameFile == "help.py":
                 contentFile="# source venv/bin/activate"
 
             elif nameFile == "info.txt":
