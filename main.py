@@ -54,8 +54,8 @@ else:
             if nameFile == ".gitignore":
                 contentFile="/venv/ \n.idea \n.vscode"
 
-            elif nameFile == "help.py":
-                contentFile="# source venv/bin/activate"
+            elif nameFile == "help.txt":
+                contentFile="source venv/bin/activate \n\npip freeze > requirements.txt \npip install -r requirements.txt "
 
             elif nameFile == "info.txt":
                 curentTime = datetime.now()
